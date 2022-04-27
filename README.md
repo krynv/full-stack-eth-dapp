@@ -2,17 +2,23 @@
 
 Requires node v16 (higher is not supported atm).
 
+This project demonstrates how you can deploy a solidity smart contract to an Ethereum (test) network 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+```
 
-Try running some of the following tasks:
+```
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
+Start `hardhat` using:
+```
 npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```
+
+Deploy the solidity smart contract:
+```
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+Start the front end app:
+```
+npm start
 ```
